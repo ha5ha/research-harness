@@ -1,13 +1,10 @@
-name: Validate package
-
+name: Validate research skill
 on:
   push:
   pull_request:
   workflow_dispatch:
-
 permissions:
   contents: read
-
 jobs:
   validate:
     strategy:
@@ -23,9 +20,7 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python }}
-      - name: Check package structure and integrity
-        run: python tools/validate_release.py .
-      - name: Exercise research helper behavior
-        run: python -B -m unittest discover -s skills/research-harness/tests -p "test_*.py"
-      - name: Exercise release validation failures
-        run: python -B -m unittest discover -s tests -p "test_*.py"
+      - run: python -B tools/validate_release.py .
+      - run: python -B -m unittest discover -s skills/research-harness/tests -v
+      - run: python -B -m unittest discover -s tests -v
+      - run: python -B skills/research-harness/examples/run_demo.py

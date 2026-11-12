@@ -1,0 +1,10 @@
+test_archives_roundtrip_deterministic_and_refuse_overwrite (test_distribution.DistributionTests.test_archives_roundtrip_deterministic_and_refuse_overwrite) ... ok
+test_evaluation_attachments_preserve_raw_evidence (test_distribution.DistributionTests.test_evaluation_attachments_preserve_raw_evidence) ... ok
+test_missing_reference_rejected (test_distribution.DistributionTests.test_missing_reference_rejected) ... ok
+test_unexpected_payload_rejected (test_distribution.DistributionTests.test_unexpected_payload_rejected) ... ok
+test_version_mismatch_rejected (test_distribution.DistributionTests.test_version_mismatch_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.992s
+
+OK

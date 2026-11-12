@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "version": "0.2.1",
+  "layout": "full",
+  "file_count": 58,
+  "manifest_checked": false,
+  "scope": "Static resources, syntax and optional content integrity; no host or scientific certification"
+}

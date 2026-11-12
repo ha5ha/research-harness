@@ -1,0 +1,21 @@
+{
+  "platform": "Windows",
+  "python": "3.12.10",
+  "checks": [
+    {
+      "archive_kind": "full",
+      "manifest_valid": true
+    },
+    {
+      "archive_kind": "skill",
+      "manifest_valid": true
+    }
+  ],
+  "scope": "Archive extraction and local CLI availability; host auto-discovery is not tested",
+  "installed_skill": {
+    "cli_matches_source": true,
+    "inspect_init_question_snapshot_check": true,
+    "installed_demo_exit_code": 0,
+    "host_autodiscovery": "not_tested"
+  }
+}

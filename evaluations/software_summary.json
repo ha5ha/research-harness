@@ -1,0 +1,111 @@
+{
+  "platform": "Windows",
+  "python": "3.12.10",
+  "baseline_results": [
+    {
+      "name": "original-tests",
+      "command": [
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "skills/research-harness/tests",
+        "-v"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 2.927,
+      "tests": 16,
+      "skipped": 0,
+      "failure_summary": "failures=2"
+    },
+    {
+      "name": "original-demo",
+      "command": [
+        "-B",
+        "skills/research-harness/examples/run_demo.py"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 1.821,
+      "tests": null,
+      "skipped": 0,
+      "failure_summary": null
+    }
+  ],
+  "final_results": [
+    {
+      "name": "final-cli-tests",
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "skills/research-harness/tests",
+        "-v"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "distribution-tests",
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "static-release",
+      "command": [
+        "python",
+        "-B",
+        "tools/validate_release.py",
+        "."
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "final-demo",
+      "command": [
+        "python",
+        "-B",
+        "skills/research-harness/examples/run_demo.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "skill-quick-validation",
+      "command": [
+        "python",
+        "skill-creator/scripts/quick_validate.py",
+        "skills/research-harness"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "final_cli_tests": {
+    "run": 31,
+    "passed": 30,
+    "skipped": 1,
+    "failed": 0
+  },
+  "distribution_tests": {
+    "run": 5,
+    "passed": 5,
+    "failed": 0
+  },
+  "read_only_replay": {
+    "commands": 26,
+    "expected_legacy_conflicts": 4,
+    "unexpected_results": 0,
+    "project_bytes_unchanged": true
+  },
+  "limits": "Local Windows/Python only. Different original/final test counts are not comparable performance rates. No remote CI run."
+}

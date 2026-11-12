@@ -1,23 +1,13 @@
-# Resume without losing the research process
+# Resume and coordinate work
 
-## Build a small working context
+Read the canonical current route before history. Restore the question, last accepted current result, counterevidence, uncertainty, attempt receipt, present permission and one next action. A handoff is a source-linked summary; it cannot override underlying records.
 
-You MUST keep durable project records separate from chat. Load current scope/state, active question/task, direct support and counterevidence, current permission and unresolved decisions first. Retrieve history by IDs or paths; do not repeatedly inject all logs, CSVs, old plans, or prior summaries.
+When Git exists, inspect branch, HEAD and staged/unstaged changes. Preserve unrelated dirty and staged edits. Follow project commit rules; the skill adds no automatic push, branch change or commit policy.
 
-Use [handoff.json](../assets/templates/handoff.json) for a session checkpoint when continuity would otherwise be lost. Record the branch/HEAD and source-state digest/time, the request and user corrections, completed work and artifacts, pending actions, active attempt/receipt, unresolved questions, authority source, and one next action. Link original sources. A checkpoint does not promote findings, extend permission, or turn a last-observed status into a current server observation.
+Before a launch, fact review, question closure or shared-state mutation, re-read dependent records. Keep parallel work bounded and outputs separate; serialize acceptance and shared-state updates. The CLI lock guards local CLI writers only. Editors, other tools and multiple machines can bypass it, and multiple file writes are not one transaction.
 
-You MUST re-read canonical records on resumption and reconcile the checkpoint. A checkpoint is an aid, not another authoritative current-state file. If information conflicts, retain the discrepancy and inspect the original decision or receipt before dependent work. Repeated summarization MUST NOT replace the source trail.
+Unknown submission outcome: inspect the existing receipt and execution identity before another attempt. The CLI rejects new preparation for the same experiment while an attempt is `submission_unknown`. Actual scheduler reconciliation follows current permission and the project's monitoring policy. Local history provides the last observation, not live remote health.
 
-## Avoid overwriting another session
+In v2, `FOCUS` only selects a question; that question owns `next_action`. Read effective status and correction relationships: `needs_review` means a recorded resolution no longer has a current supporting synthesis. Keep old findings, reports and timestamps inspectable; revise from current evidence rather than copying old summary text.
 
-Before editing shared state, you MUST re-read it and compare with the version/digest you used. If it changed, reconcile before writing. Assign one coordinator to state, claims and task activation; give parallel workers disjoint output paths and a frozen input digest.
-
-This workflow is an operational convention. The bundled helpers do not implement locks, atomic multi-file transactions, or compare-and-swap updates. Concurrent autonomous writers need a real transactional store or locking adapter before safe shared mutation can be claimed. If that is unavailable, serialize writes explicitly.
-
-Git branches, chat threads and scientific questions are different identities. Record each when applicable; never assume a branch name is permanent or that a new conversation means a new experiment. Do not reset, switch branches, merge, push, or clean other work merely to make recovery easier.
-
-## Report only the state actually observed
-
-A status response SHOULD state the research question, last verified finding, active attempt and last observation time, remaining uncertainty, and next action. Keep confirmed facts separate from an inferred or stale execution state. A status request does not authorize polling beyond the project policy or submitting new work.
-
-At handoff, state what was actually completed, how it was checked, what is unresolved, and what the next agent may do. If permission is the remaining boundary, leave a concrete contract or reviewable artifact and identify the missing decision precisely.
+Handoffs SHOULD link exact source paths/IDs and distinguish verified observations, hypotheses, stale information, missing evidence, current permissions and the next authorized or proposed step. A fresh session must not trigger a new run, review sign-off or publication by itself.

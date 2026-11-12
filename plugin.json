@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "research-harness",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "Question-led research continuity, experiment contracts, and scoped evidence for general-purpose coding agents.",
   "license": "MIT"
 }

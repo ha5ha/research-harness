@@ -14,13 +14,13 @@ Source repository: [ha5ha/research-harness](https://github.com/ha5ha/research-ha
 
 **Install and invoke:** Install the complete `skills/research-harness` folder using your host's Agent Skills mechanism, then ask it to use research-harness in natural language. `$research-harness` is a Codex invocation example; other hosts use their own documented syntax.
 
-**Portable core:** `SKILL.md`, `references/`, `assets/`, and optional `scripts/` work independently of Codex. `agents/openai.yaml` and `.codex-plugin/plugin.json` are optional Codex adapters. Other hosts use the same core through their own skill mechanism; live compatibility with those hosts has not been verified.
+**Portable core:** `SKILL.md`, `references/`, optional `scripts/` work independently of Codex. `agents/openai.yaml` and `.codex-plugin/plugin.json` are optional Codex adapters. Other hosts use the same core through their own skill mechanism; live compatibility with those hosts has not been verified.
 
 **Requirements:** A host that supports Agent Skills and local file access. No Python is needed to read and apply the core workflow. Optional local helpers require Python 3.10+ and use only the standard library. No model API key, MCP server, account, or remote service is bundled.
 
 **Limits:** Integrity checks do not establish scientific validity, authenticate authorization, or guarantee a fair comparison. The package is not an experiment scheduler or a multi-session locking service. Host-specific installation and permissions apply; live compatibility with every agent or marketplace has not been verified.
 
-**Version:** 0.1.1. **License:** MIT. **Author:** Research Harness contributors.
+**Version:** 0.2.1. **License:** MIT. **Author:** Research Harness contributors.
 
 ## 中文
 
@@ -34,10 +34,10 @@ Source repository: [ha5ha/research-harness](https://github.com/ha5ha/research-ha
 
 **安装与调用：** 按宿主自己的 Agent Skills 机制安装完整的 `skills/research-harness` 文件夹，再用自然语言要求使用 research-harness。`$research-harness` 是 Codex 调用示例，其他宿主遵从各自文档。
 
-**通用核心：** `SKILL.md`、`references/`、`assets/` 和可选的 `scripts/` 独立于 Codex。`agents/openai.yaml` 与 `.codex-plugin/plugin.json` 是可选的 Codex 适配。其他宿主通过各自 skill 机制使用相同核心；尚未对这些宿主进行实机会话兼容验证。
+**通用核心：** `SKILL.md`、`references/`、可选的 `scripts/` 独立于 Codex。`agents/openai.yaml` 与 `.codex-plugin/plugin.json` 是可选的 Codex 适配。其他宿主通过各自 skill 机制使用相同核心；尚未对这些宿主进行实机会话兼容验证。
 
 **依赖：** 支持 Agent Skills 且可访问本地文件的宿主。核心工作流不需要 Python；可选工具需要 Python 3.10+，仅使用标准库。不附带模型 API 密钥、MCP 服务、账号或远端服务。
 
 **能力边界：** 完整性校验不证明科学有效性、授权真实性或比较公平性。本包不是实验调度器，也不提供多会话锁。安装及权限服从宿主；未逐一验证所有 agent 和市场的实机兼容。
 
-**版本：** 0.1.1。**许可证：** MIT。**作者：** Research Harness contributors。
+**版本：** 0.2.1。**许可证：** MIT。**作者：** Research Harness contributors。

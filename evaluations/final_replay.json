@@ -1,0 +1,1093 @@
+[
+  {
+    "lane": "original",
+    "case": "01_snapshot",
+    "command": "inspect",
+    "exit_code": 0,
+    "result": {
+      "next_action": "Run status and check; read the referenced current records",
+      "ok": true,
+      "protocol": "research-harness-v2"
+    }
+  },
+  {
+    "lane": "original",
+    "case": "01_snapshot",
+    "command": "status",
+    "exit_code": 0,
+    "result": {
+      "attempts": [],
+      "counts": {
+        "attempts": 0,
+        "evidence": 1,
+        "experiments": 0,
+        "findings": 0,
+        "questions": 1,
+        "syntheses": 0
+      },
+      "evidence_refs": [
+        {
+          "archived": true,
+          "attempt_id": null,
+          "derived_from_evidence_id": null,
+          "id": "E-c1a584cdc604",
+          "origin_evidence_id": "E-c1a584cdc604",
+          "question_id": "Q-508de0ebf137",
+          "reuse_not_independent": false,
+          "source_path": "results/toy.csv"
+        }
+      ],
+      "findings": [],
+      "focus": {
+        "next_action": "Define a bounded research question",
+        "next_action_source": "uninitialized focus",
+        "question_id": null,
+        "updated_at": "2026-11-12T09:37:17+00:00"
+      },
+      "note": "Recorded state only; last observation timestamps do not prove live executor status",
+      "ok": true,
+      "open_question_ids": [
+        "Q-508de0ebf137"
+      ],
+      "project": "Synthetic research fixture",
+      "questions": [
+        {
+          "children": [],
+          "id": "Q-508de0ebf137",
+          "latest_complete_synthesis_id": null,
+          "mode": "exploratory",
+          "next_action": "Clarify hypotheses, available evidence, and testable outcomes",
+          "recorded_status": "open",
+          "resolution_reasons": [],
+          "status": "open",
+          "title": "Can the supplied observation be archived?"
+        }
+      ],
+      "syntheses": []
+    }
+  },
+  {
+    "lane": "original",
+    "case": "01_snapshot",
+    "command": "check",
+    "exit_code": 0,
+    "result": {
+      "authorization_authenticity": "not_assessed",
+      "concurrency": "single-local-writer only; not a distributed lock",
+      "counts": {
+        "attempts": 0,
+        "evidence": 1,
+        "experiments": 0,
+        "findings": 0,
+        "questions": 1,
+        "syntheses": 0
+      },
+      "errors": [],
+      "needs_review_question_ids": [],
+      "ok": true,
+      "operation": "check",
+      "scientific_validity": "not_assessed",
+      "warnings": []
+    }
+  },
+  {
+    "lane": "original",
+    "case": "02_resume",
+    "command": "inspect",
+    "exit_code": 0,
+    "result": {
+      "next_action": "Run status and check; read the referenced current records",
+      "ok": true,
+      "protocol": "research-harness-v2"
+    }
+  },
+  {
+    "lane": "original",
+    "case": "02_resume",
+    "command": "status",
+    "exit_code": 0,
+    "result": {
+      "attempts": [],
+      "counts": {
+        "attempts": 0,
+        "evidence": 1,
+        "experiments": 0,
+        "findings": 2,
+        "questions": 2,
+        "syntheses": 2
+      },
+      "evidence_refs": [
+        {
+          "archived": false,
+          "attempt_id": null,
+          "derived_from_evidence_id": null,
+          "id": "E-c1cc667f89c0",
+          "origin_evidence_id": "E-c1cc667f89c0",
+          "question_id": "Q-48fac18e1320",
+          "reuse_not_independent": false,
+          "source_path": "results/paired.csv"
+        }
+      ],
+      "findings": [
+        {
+          "counterevidence_ids": [],
+          "currency": "current",
+          "current": true,
+          "evidence_ids": [
+            "E-c1cc667f89c0"
+          ],
+          "id": "F-2143a0b26c49",
+          "kind": "scoped_claim",
+          "question_id": "Q-48fac18e1320",
+          "scope": "synthetic two-sample diagnostic only",
+          "statement": "Correction: one sample worsens; the two-sample mean error increases from 2 to 3",
+          "status": "accepted",
+          "superseded_by": [],
+          "supersedes_id": "F-5dc56316560d"
+        },
+        {
+          "counterevidence_ids": [],
+          "currency": "superseded",
+          "current": false,
+          "evidence_ids": [
+            "E-c1cc667f89c0"
+          ],
+          "id": "F-5dc56316560d",
+          "kind": "scoped_claim",
+          "question_id": "Q-48fac18e1320",
+          "scope": "synthetic two-sample diagnostic only",
+          "statement": "Earlier review claimed improvement in every supplied sample",
+          "status": "accepted",
+          "superseded_by": [
+            "F-2143a0b26c49"
+          ],
+          "supersedes_id": null
+        }
+      ],
+      "focus": {
+        "next_action": "Clarify hypotheses, available evidence, and testable outcomes",
+        "next_action_source": "question.json",
+        "question_id": "Q-69d0d20b78a0",
+        "updated_at": "2026-11-12T09:37:17+00:00"
+      },
+      "note": "Recorded state only; last observation timestamps do not prove live executor status",
+      "ok": true,
+      "open_question_ids": [
+        "Q-48fac18e1320",
+        "Q-69d0d20b78a0"
+      ],
+      "project": "Synthetic research fixture",
+      "questions": [
+        {
+          "children": [
+            {
+              "children": [],
+              "id": "Q-48fac18e1320",
+              "latest_complete_synthesis_id": null,
+              "mode": "exploratory",
+              "next_action": "Clarify hypotheses, available evidence, and testable outcomes",
+              "recorded_status": "resolved",
+              "resolution_reasons": [
+                "no current complete reviewed synthesis"
+              ],
+              "status": "needs_review",
+              "title": "Does the paired evidence support the claim?"
+            }
+          ],
+          "id": "Q-69d0d20b78a0",
+          "latest_complete_synthesis_id": null,
+          "mode": "exploratory",
+          "next_action": "Clarify hypotheses, available evidence, and testable outcomes",
+          "recorded_status": "resolved",
+          "resolution_reasons": [
+            "no current complete reviewed synthesis",
+            "unresolved direct children"
+          ],
+          "status": "needs_review",
+          "title": "Is the change consistently beneficial?"
+        }
+      ],
+      "syntheses": [
+        {
+          "coverage": "complete",
+          "currency": "needs_review",
+          "current": false,
+          "document_path": "research/questions/Q-69d0d20b78a0--is-the-change-consistently-beneficial/syntheses/S-89b8e0295d2e/report.md",
+          "effective_coverage": "partial",
+          "finding_ids": [
+            "F-5dc56316560d"
+          ],
+          "id": "S-89b8e0295d2e",
+          "question_id": "Q-69d0d20b78a0",
+          "reasons": [
+            "finding is missing, unaccepted, or superseded: F-5dc56316560d",
+            "legacy report lacks dependency snapshot; create a new reviewed synthesis",
+            "child status or current conclusion changed",
+            "child coverage changed"
+          ],
+          "status": "reviewed"
+        },
+        {
+          "coverage": "complete",
+          "currency": "needs_review",
+          "current": false,
+          "document_path": "research/questions/Q-69d0d20b78a0--is-the-change-consistently-beneficial/subquestions/Q-48fac18e1320--does-the-paired-evidence-support-the-cla/syntheses/S-d27d06679784/report.md",
+          "effective_coverage": "complete",
+          "finding_ids": [
+            "F-5dc56316560d"
+          ],
+          "id": "S-d27d06679784",
+          "question_id": "Q-48fac18e1320",
+          "reasons": [
+            "finding is missing, unaccepted, or superseded: F-5dc56316560d",
+            "legacy report lacks dependency snapshot; create a new reviewed synthesis"
+          ],
+          "status": "reviewed"
+        }
+      ]
+    }
+  },
+  {
+    "lane": "original",
+    "case": "02_resume",
+    "command": "check",
+    "exit_code": 1,
+    "result": {
+      "authorization_authenticity": "not_assessed",
+      "concurrency": "single-local-writer only; not a distributed lock",
+      "counts": {
+        "attempts": 0,
+        "evidence": 1,
+        "experiments": 0,
+        "findings": 2,
+        "questions": 2,
+        "syntheses": 2
+      },
+      "errors": [
+        "legacy FOCUS next_action conflicts with question; explicitly normalize using focus --question ID [--next-action TEXT]"
+      ],
+      "needs_review_question_ids": [],
+      "ok": false,
+      "operation": "check",
+      "scientific_validity": "not_assessed",
+      "warnings": []
+    }
+  },
+  {
+    "lane": "original",
+    "case": "03_existing_analysis",
+    "command": "inspect",
+    "exit_code": 0,
+    "result": {
+      "next_action": "Read existing project instructions and canonical records; use native validators; do not initialize or fabricate a second ledger",
+      "observed_markers": [
+        "CURRENT_STATE.yaml",
+        "PROJECT_SCOPE.md",
+        "facts.yaml"
+      ],
+      "ok": true,
+      "protocol": "existing_native_or_unsupported",
+      "scientific_state": "not_assessed"
+    }
+  },
+  {
+    "lane": "original",
+    "case": "04_execution",
+    "command": "inspect",
+    "exit_code": 0,
+    "result": {
+      "next_action": "Run status and check; read the referenced current records",
+      "ok": true,
+      "protocol": "research-harness-v2"
+    }
+  },
+  {
+    "lane": "original",
+    "case": "04_execution",
+    "command": "status",
+    "exit_code": 0,
+    "result": {
+      "attempts": [
+        {
+          "experiment_id": "X-9ac2d3024470",
+          "id": "AT-574f2b1b08a2",
+          "last_observation": {
+            "at": "2026-11-12T09:37:18+00:00",
+            "note": "The response was lost; no present worker observation exists",
+            "receipt_ref": null,
+            "status": "submission_unknown"
+          },
+          "status": "submission_unknown"
+        }
+      ],
+      "counts": {
+        "attempts": 1,
+        "evidence": 0,
+        "experiments": 1,
+        "findings": 0,
+        "questions": 1,
+        "syntheses": 0
+      },
+      "evidence_refs": [],
+      "findings": [],
+      "focus": {
+        "next_action": "Clarify hypotheses, available evidence, and testable outcomes",
+        "next_action_source": "question.json",
+        "question_id": "Q-3a791effef14",
+        "updated_at": "2026-11-12T09:37:18+00:00"
+      },
+      "note": "Recorded state only; last observation timestamps do not prove live executor status",
+      "ok": true,
+      "open_question_ids": [
+        "Q-3a791effef14"
+      ],
+      "project": "Synthetic research fixture",
+      "questions": [
+        {
+          "children": [],
+          "id": "Q-3a791effef14",
+          "latest_complete_synthesis_id": null,
+          "mode": "exploratory",
+          "next_action": "Clarify hypotheses, available evidence, and testable outcomes",
+          "recorded_status": "open",
+          "resolution_reasons": [],
+          "status": "open",
+          "title": "Does another evaluation resolve the uncertainty?"
+        }
+      ],
+      "syntheses": []
+    }
+  },
+  {
+    "lane": "original",
+    "case": "04_execution",
+    "command": "check",
+    "exit_code": 1,
+    "result": {
+      "authorization_authenticity": "not_assessed",
+      "concurrency": "single-local-writer only; not a distributed lock",
+      "counts": {
+        "attempts": 1,
+        "evidence": 0,
+        "experiments": 1,
+        "findings": 0,
+        "questions": 1,
+        "syntheses": 0
+      },
+      "errors": [
+        "legacy FOCUS next_action conflicts with question; explicitly normalize using focus --question ID [--next-action TEXT]"
+      ],
+      "needs_review_question_ids": [],
+      "ok": false,
+      "operation": "check",
+      "scientific_validity": "not_assessed",
+      "warnings": []
+    }
+  },
+  {
+    "lane": "original",
+    "case": "05_shared_evidence",
+    "command": "inspect",
+    "exit_code": 0,
+    "result": {
+      "next_action": "Run status and check; read the referenced current records",
+      "ok": true,
+      "protocol": "research-harness-v2"
+    }
+  },
+  {
+    "lane": "original",
+    "case": "05_shared_evidence",
+    "command": "status",
+    "exit_code": 0,
+    "result": {
+      "attempts": [],
+      "counts": {
+        "attempts": 0,
+        "evidence": 2,
+        "experiments": 0,
+        "findings": 1,
+        "questions": 3,
+        "syntheses": 1
+      },
+      "evidence_refs": [
+        {
+          "archived": false,
+          "attempt_id": null,
+          "derived_from_evidence_id": null,
+          "id": "E-659e35343175",
+          "origin_evidence_id": "E-659e35343175",
+          "question_id": "Q-d47a327e4f03",
+          "reuse_not_independent": false,
+          "source_path": "results/shared.csv"
+        },
+        {
+          "archived": false,
+          "attempt_id": null,
+          "derived_from_evidence_id": null,
+          "id": "E-bbde584cb4b4",
+          "origin_evidence_id": "E-bbde584cb4b4",
+          "question_id": "Q-34844c27dfb4",
+          "reuse_not_independent": false,
+          "source_path": "results/shared.csv"
+        }
+      ],
+      "findings": [
+        {
+          "counterevidence_ids": [],
+          "currency": "unreviewed",
+          "current": false,
+          "evidence_ids": [
+            "E-bbde584cb4b4"
+          ],
+          "id": "F-9b33785801e2",
+          "kind": "observation",
+          "question_id": "Q-34844c27dfb4",
+          "scope": "Same two synthetic samples a,b in results/shared.csv; common baseline only",
+          "statement": "Reuse of E-659e35343175 through same-source reference E-bbde584cb4b4: existing shared.csv contains samples a,b with baseline errors 2,4 (mean 3). No additional samples or independent replication.",
+          "status": "proposed",
+          "superseded_by": [],
+          "supersedes_id": null
+        }
+      ],
+      "focus": {
+        "next_action": "Define a bounded research question",
+        "next_action_source": "uninitialized focus",
+        "question_id": null,
+        "updated_at": "2026-11-12T09:37:18+00:00"
+      },
+      "note": "Recorded state only; last observation timestamps do not prove live executor status",
+      "ok": true,
+      "open_question_ids": [
+        "Q-34844c27dfb4",
+        "Q-b948f194729b",
+        "Q-d47a327e4f03"
+      ],
+      "project": "Synthetic research fixture",
+      "questions": [
+        {
+          "children": [
+            {
+              "children": [],
+              "id": "Q-34844c27dfb4",
+              "latest_complete_synthesis_id": null,
+              "mode": "exploratory",
+              "next_action": "Clarify hypotheses, available evidence, and testable outcomes",
+              "recorded_status": "open",
+              "resolution_reasons": [],
+              "status": "open",
+              "title": "Behavior under the same baseline"
+            },
+            {
+              "children": [],
+              "id": "Q-d47a327e4f03",
+              "latest_complete_synthesis_id": null,
+              "mode": "exploratory",
+              "next_action": "Clarify hypotheses, available evidence, and testable outcomes",
+              "recorded_status": "open",
+              "resolution_reasons": [],
+              "status": "open",
+              "title": "Baseline measurement"
+            }
+          ],
+          "id": "Q-b948f194729b",
+          "latest_complete_synthesis_id": null,
+          "mode": "exploratory",
+          "next_action": "Clarify hypotheses, available evidence, and testable outcomes",
+          "recorded_status": "open",
+          "resolution_reasons": [],
+          "status": "open",
+          "title": "What can the shared baseline tell us?"
+        }
+      ],
+      "syntheses": [
+        {
+          "coverage": "partial",
+          "currency": "unreviewed",
+          "current": false,
+          "document_path": "research/questions/Q-b948f194729b--what-can-the-shared-baseline-tell-us/syntheses/S-e546436fdece/report.md",
+          "effective_coverage": "partial",
+          "finding_ids": [
+            "F-9b33785801e2"
+          ],
+          "id": "S-e546436fdece",
+          "question_id": "Q-b948f194729b",
+          "reasons": [
+            "finding is missing, unaccepted, or superseded: F-9b33785801e2",
+            "legacy report lacks dependency snapshot; create a new reviewed synthesis"
+          ],
+          "status": "proposed"
+        }
+      ]
+    }
+  },
+  {
+    "lane": "original",
+    "case": "05_shared_evidence",
+    "command": "check",
+    "exit_code": 0,
+    "result": {
+      "authorization_authenticity": "not_assessed",
+      "concurrency": "single-local-writer only; not a distributed lock",
+      "counts": {
+        "attempts": 0,
+        "evidence": 2,
+        "experiments": 0,
+        "findings": 1,
+        "questions": 3,
+        "syntheses": 1
+      },
+      "errors": [],
+      "needs_review_question_ids": [],
+      "ok": true,
+      "operation": "check",
+      "scientific_validity": "not_assessed",
+      "warnings": []
+    }
+  },
+  {
+    "lane": "revised",
+    "case": "01_snapshot",
+    "command": "inspect",
+    "exit_code": 0,
+    "result": {
+      "next_action": "Run status and check; read the referenced current records",
+      "ok": true,
+      "protocol": "research-harness-v2"
+    }
+  },
+  {
+    "lane": "revised",
+    "case": "01_snapshot",
+    "command": "status",
+    "exit_code": 0,
+    "result": {
+      "attempts": [],
+      "counts": {
+        "attempts": 0,
+        "evidence": 1,
+        "experiments": 0,
+        "findings": 0,
+        "questions": 1,
+        "syntheses": 0
+      },
+      "evidence_refs": [
+        {
+          "archived": true,
+          "attempt_id": null,
+          "derived_from_evidence_id": null,
+          "id": "E-1c647f87a8c6",
+          "origin_evidence_id": "E-1c647f87a8c6",
+          "question_id": "Q-508de0ebf137",
+          "reuse_not_independent": false,
+          "source_path": "results/toy.csv"
+        }
+      ],
+      "findings": [],
+      "focus": {
+        "next_action": "Define a bounded research question",
+        "next_action_source": "uninitialized focus",
+        "question_id": null,
+        "updated_at": "2026-11-12T09:37:17+00:00"
+      },
+      "note": "Recorded state only; last observation timestamps do not prove live executor status",
+      "ok": true,
+      "open_question_ids": [
+        "Q-508de0ebf137"
+      ],
+      "project": "Synthetic research fixture",
+      "questions": [
+        {
+          "children": [],
+          "id": "Q-508de0ebf137",
+          "latest_complete_synthesis_id": null,
+          "mode": "exploratory",
+          "next_action": "Clarify hypotheses, available evidence, and testable outcomes",
+          "recorded_status": "open",
+          "resolution_reasons": [],
+          "status": "open",
+          "title": "Can the supplied observation be archived?"
+        }
+      ],
+      "syntheses": []
+    }
+  },
+  {
+    "lane": "revised",
+    "case": "01_snapshot",
+    "command": "check",
+    "exit_code": 0,
+    "result": {
+      "authorization_authenticity": "not_assessed",
+      "concurrency": "single-local-writer only; not a distributed lock",
+      "counts": {
+        "attempts": 0,
+        "evidence": 1,
+        "experiments": 0,
+        "findings": 0,
+        "questions": 1,
+        "syntheses": 0
+      },
+      "errors": [],
+      "needs_review_question_ids": [],
+      "ok": true,
+      "operation": "check",
+      "scientific_validity": "not_assessed",
+      "warnings": []
+    }
+  },
+  {
+    "lane": "revised",
+    "case": "02_resume",
+    "command": "inspect",
+    "exit_code": 0,
+    "result": {
+      "next_action": "Run status and check; read the referenced current records",
+      "ok": true,
+      "protocol": "research-harness-v2"
+    }
+  },
+  {
+    "lane": "revised",
+    "case": "02_resume",
+    "command": "status",
+    "exit_code": 0,
+    "result": {
+      "attempts": [],
+      "counts": {
+        "attempts": 0,
+        "evidence": 1,
+        "experiments": 0,
+        "findings": 2,
+        "questions": 2,
+        "syntheses": 2
+      },
+      "evidence_refs": [
+        {
+          "archived": false,
+          "attempt_id": null,
+          "derived_from_evidence_id": null,
+          "id": "E-c1cc667f89c0",
+          "origin_evidence_id": "E-c1cc667f89c0",
+          "question_id": "Q-48fac18e1320",
+          "reuse_not_independent": false,
+          "source_path": "results/paired.csv"
+        }
+      ],
+      "findings": [
+        {
+          "counterevidence_ids": [],
+          "currency": "current",
+          "current": true,
+          "evidence_ids": [
+            "E-c1cc667f89c0"
+          ],
+          "id": "F-2143a0b26c49",
+          "kind": "scoped_claim",
+          "question_id": "Q-48fac18e1320",
+          "scope": "synthetic two-sample diagnostic only",
+          "statement": "Correction: one sample worsens; the two-sample mean error increases from 2 to 3",
+          "status": "accepted",
+          "superseded_by": [],
+          "supersedes_id": "F-5dc56316560d"
+        },
+        {
+          "counterevidence_ids": [],
+          "currency": "superseded",
+          "current": false,
+          "evidence_ids": [
+            "E-c1cc667f89c0"
+          ],
+          "id": "F-5dc56316560d",
+          "kind": "scoped_claim",
+          "question_id": "Q-48fac18e1320",
+          "scope": "synthetic two-sample diagnostic only",
+          "statement": "Earlier review claimed improvement in every supplied sample",
+          "status": "accepted",
+          "superseded_by": [
+            "F-2143a0b26c49"
+          ],
+          "supersedes_id": null
+        }
+      ],
+      "focus": {
+        "next_action": "Clarify hypotheses, available evidence, and testable outcomes",
+        "next_action_source": "question.json",
+        "question_id": "Q-69d0d20b78a0",
+        "updated_at": "2026-11-12T09:37:17+00:00"
+      },
+      "note": "Recorded state only; last observation timestamps do not prove live executor status",
+      "ok": true,
+      "open_question_ids": [
+        "Q-48fac18e1320",
+        "Q-69d0d20b78a0"
+      ],
+      "project": "Synthetic research fixture",
+      "questions": [
+        {
+          "children": [
+            {
+              "children": [],
+              "id": "Q-48fac18e1320",
+              "latest_complete_synthesis_id": null,
+              "mode": "exploratory",
+              "next_action": "Clarify hypotheses, available evidence, and testable outcomes",
+              "recorded_status": "resolved",
+              "resolution_reasons": [
+                "no current complete reviewed synthesis"
+              ],
+              "status": "needs_review",
+              "title": "Does the paired evidence support the claim?"
+            }
+          ],
+          "id": "Q-69d0d20b78a0",
+          "latest_complete_synthesis_id": null,
+          "mode": "exploratory",
+          "next_action": "Clarify hypotheses, available evidence, and testable outcomes",
+          "recorded_status": "resolved",
+          "resolution_reasons": [
+            "no current complete reviewed synthesis",
+            "unresolved direct children"
+          ],
+          "status": "needs_review",
+          "title": "Is the change consistently beneficial?"
+        }
+      ],
+      "syntheses": [
+        {
+          "coverage": "complete",
+          "currency": "needs_review",
+          "current": false,
+          "document_path": "research/questions/Q-69d0d20b78a0--is-the-change-consistently-beneficial/syntheses/S-89b8e0295d2e/report.md",
+          "effective_coverage": "partial",
+          "finding_ids": [
+            "F-5dc56316560d"
+          ],
+          "id": "S-89b8e0295d2e",
+          "question_id": "Q-69d0d20b78a0",
+          "reasons": [
+            "finding is missing, unaccepted, or superseded: F-5dc56316560d",
+            "legacy report lacks dependency snapshot; create a new reviewed synthesis",
+            "child status or current conclusion changed",
+            "child coverage changed"
+          ],
+          "status": "reviewed"
+        },
+        {
+          "coverage": "complete",
+          "currency": "needs_review",
+          "current": false,
+          "document_path": "research/questions/Q-69d0d20b78a0--is-the-change-consistently-beneficial/subquestions/Q-48fac18e1320--does-the-paired-evidence-support-the-cla/syntheses/S-d27d06679784/report.md",
+          "effective_coverage": "complete",
+          "finding_ids": [
+            "F-5dc56316560d"
+          ],
+          "id": "S-d27d06679784",
+          "question_id": "Q-48fac18e1320",
+          "reasons": [
+            "finding is missing, unaccepted, or superseded: F-5dc56316560d",
+            "legacy report lacks dependency snapshot; create a new reviewed synthesis"
+          ],
+          "status": "reviewed"
+        }
+      ]
+    }
+  },
+  {
+    "lane": "revised",
+    "case": "02_resume",
+    "command": "check",
+    "exit_code": 1,
+    "result": {
+      "authorization_authenticity": "not_assessed",
+      "concurrency": "single-local-writer only; not a distributed lock",
+      "counts": {
+        "attempts": 0,
+        "evidence": 1,
+        "experiments": 0,
+        "findings": 2,
+        "questions": 2,
+        "syntheses": 2
+      },
+      "errors": [
+        "legacy FOCUS next_action conflicts with question; explicitly normalize using focus --question ID [--next-action TEXT]"
+      ],
+      "needs_review_question_ids": [],
+      "ok": false,
+      "operation": "check",
+      "scientific_validity": "not_assessed",
+      "warnings": []
+    }
+  },
+  {
+    "lane": "revised",
+    "case": "03_existing_analysis",
+    "command": "inspect",
+    "exit_code": 0,
+    "result": {
+      "next_action": "Read existing project instructions and canonical records; use native validators; do not initialize or fabricate a second ledger",
+      "observed_markers": [
+        "CURRENT_STATE.yaml",
+        "PROJECT_SCOPE.md",
+        "facts.yaml"
+      ],
+      "ok": true,
+      "protocol": "existing_native_or_unsupported",
+      "scientific_state": "not_assessed"
+    }
+  },
+  {
+    "lane": "revised",
+    "case": "04_execution",
+    "command": "inspect",
+    "exit_code": 0,
+    "result": {
+      "next_action": "Run status and check; read the referenced current records",
+      "ok": true,
+      "protocol": "research-harness-v2"
+    }
+  },
+  {
+    "lane": "revised",
+    "case": "04_execution",
+    "command": "status",
+    "exit_code": 0,
+    "result": {
+      "attempts": [
+        {
+          "experiment_id": "X-9ac2d3024470",
+          "id": "AT-574f2b1b08a2",
+          "last_observation": {
+            "at": "2026-11-12T09:37:18+00:00",
+            "note": "The response was lost; no present worker observation exists",
+            "receipt_ref": null,
+            "status": "submission_unknown"
+          },
+          "status": "submission_unknown"
+        }
+      ],
+      "counts": {
+        "attempts": 1,
+        "evidence": 0,
+        "experiments": 1,
+        "findings": 0,
+        "questions": 1,
+        "syntheses": 0
+      },
+      "evidence_refs": [],
+      "findings": [],
+      "focus": {
+        "next_action": "Clarify hypotheses, available evidence, and testable outcomes",
+        "next_action_source": "question.json",
+        "question_id": "Q-3a791effef14",
+        "updated_at": "2026-11-12T09:37:18+00:00"
+      },
+      "note": "Recorded state only; last observation timestamps do not prove live executor status",
+      "ok": true,
+      "open_question_ids": [
+        "Q-3a791effef14"
+      ],
+      "project": "Synthetic research fixture",
+      "questions": [
+        {
+          "children": [],
+          "id": "Q-3a791effef14",
+          "latest_complete_synthesis_id": null,
+          "mode": "exploratory",
+          "next_action": "Clarify hypotheses, available evidence, and testable outcomes",
+          "recorded_status": "open",
+          "resolution_reasons": [],
+          "status": "open",
+          "title": "Does another evaluation resolve the uncertainty?"
+        }
+      ],
+      "syntheses": []
+    }
+  },
+  {
+    "lane": "revised",
+    "case": "04_execution",
+    "command": "check",
+    "exit_code": 1,
+    "result": {
+      "authorization_authenticity": "not_assessed",
+      "concurrency": "single-local-writer only; not a distributed lock",
+      "counts": {
+        "attempts": 1,
+        "evidence": 0,
+        "experiments": 1,
+        "findings": 0,
+        "questions": 1,
+        "syntheses": 0
+      },
+      "errors": [
+        "legacy FOCUS next_action conflicts with question; explicitly normalize using focus --question ID [--next-action TEXT]"
+      ],
+      "needs_review_question_ids": [],
+      "ok": false,
+      "operation": "check",
+      "scientific_validity": "not_assessed",
+      "warnings": []
+    }
+  },
+  {
+    "lane": "revised",
+    "case": "05_shared_evidence",
+    "command": "inspect",
+    "exit_code": 0,
+    "result": {
+      "next_action": "Run status and check; read the referenced current records",
+      "ok": true,
+      "protocol": "research-harness-v2"
+    }
+  },
+  {
+    "lane": "revised",
+    "case": "05_shared_evidence",
+    "command": "status",
+    "exit_code": 0,
+    "result": {
+      "attempts": [],
+      "counts": {
+        "attempts": 0,
+        "evidence": 2,
+        "experiments": 0,
+        "findings": 1,
+        "questions": 3,
+        "syntheses": 1
+      },
+      "evidence_refs": [
+        {
+          "archived": false,
+          "attempt_id": null,
+          "derived_from_evidence_id": null,
+          "id": "E-659e35343175",
+          "origin_evidence_id": "E-659e35343175",
+          "question_id": "Q-d47a327e4f03",
+          "reuse_not_independent": false,
+          "source_path": "results/shared.csv"
+        },
+        {
+          "archived": false,
+          "attempt_id": null,
+          "derived_from_evidence_id": "E-659e35343175",
+          "id": "E-245ad530f940",
+          "origin_evidence_id": "E-659e35343175",
+          "question_id": "Q-34844c27dfb4",
+          "reuse_not_independent": true,
+          "source_path": "results/shared.csv"
+        }
+      ],
+      "findings": [
+        {
+          "counterevidence_ids": [],
+          "currency": "unreviewed",
+          "current": false,
+          "evidence_ids": [
+            "E-245ad530f940"
+          ],
+          "id": "F-d7c95aba57a7",
+          "kind": "observation",
+          "question_id": "Q-34844c27dfb4",
+          "scope": "results/shared.csv only; two unique synthetic samples, same original baseline E-659e35343175, no new execution; model, cohort and implementation unspecified",
+          "statement": "The reused baseline contains the same two synthetic samples a and b, with errors 2 and 4 and mean 3; no adapted comparison is present and reuse creates no independent replication",
+          "status": "proposed",
+          "superseded_by": [],
+          "supersedes_id": null
+        }
+      ],
+      "focus": {
+        "next_action": "Define a bounded research question",
+        "next_action_source": "uninitialized focus",
+        "question_id": null,
+        "updated_at": "2026-11-12T09:37:18+00:00"
+      },
+      "note": "Recorded state only; last observation timestamps do not prove live executor status",
+      "ok": true,
+      "open_question_ids": [
+        "Q-34844c27dfb4",
+        "Q-b948f194729b",
+        "Q-d47a327e4f03"
+      ],
+      "project": "Synthetic research fixture",
+      "questions": [
+        {
+          "children": [
+            {
+              "children": [],
+              "id": "Q-34844c27dfb4",
+              "latest_complete_synthesis_id": null,
+              "mode": "exploratory",
+              "next_action": "Clarify hypotheses, available evidence, and testable outcomes",
+              "recorded_status": "open",
+              "resolution_reasons": [],
+              "status": "open",
+              "title": "Behavior under the same baseline"
+            },
+            {
+              "children": [],
+              "id": "Q-d47a327e4f03",
+              "latest_complete_synthesis_id": null,
+              "mode": "exploratory",
+              "next_action": "Clarify hypotheses, available evidence, and testable outcomes",
+              "recorded_status": "open",
+              "resolution_reasons": [],
+              "status": "open",
+              "title": "Baseline measurement"
+            }
+          ],
+          "id": "Q-b948f194729b",
+          "latest_complete_synthesis_id": null,
+          "mode": "exploratory",
+          "next_action": "Clarify hypotheses, available evidence, and testable outcomes",
+          "recorded_status": "open",
+          "resolution_reasons": [],
+          "status": "open",
+          "title": "What can the shared baseline tell us?"
+        }
+      ],
+      "syntheses": [
+        {
+          "coverage": "partial",
+          "currency": "unreviewed",
+          "current": false,
+          "document_path": "research/questions/Q-b948f194729b--what-can-the-shared-baseline-tell-us/syntheses/S-a6aeef7c8cfe/report.md",
+          "effective_coverage": "partial",
+          "finding_ids": [
+            "F-d7c95aba57a7"
+          ],
+          "id": "S-a6aeef7c8cfe",
+          "question_id": "Q-b948f194729b",
+          "reasons": [
+            "finding is missing, unaccepted, or superseded: F-d7c95aba57a7"
+          ],
+          "status": "proposed"
+        }
+      ]
+    }
+  },
+  {
+    "lane": "revised",
+    "case": "05_shared_evidence",
+    "command": "check",
+    "exit_code": 0,
+    "result": {
+      "authorization_authenticity": "not_assessed",
+      "concurrency": "single-local-writer only; not a distributed lock",
+      "counts": {
+        "attempts": 0,
+        "evidence": 2,
+        "experiments": 0,
+        "findings": 1,
+        "questions": 3,
+        "syntheses": 1
+      },
+      "errors": [],
+      "needs_review_question_ids": [],
+      "ok": true,
+      "operation": "check",
+      "scientific_validity": "not_assessed",
+      "warnings": []
+    }
+  }
+]

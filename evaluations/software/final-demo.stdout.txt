@@ -1,0 +1,30 @@
+{
+  "demo": "passed",
+  "question_id": "Q-8405e5d46952",
+  "child_question_id": "Q-4b1ae37a9f78",
+  "experiment_id": "X-31dd1f860ee9",
+  "attempt_id": "AT-74da2e9a8ea4",
+  "evidence_id": "E-f36f1cedd6b9",
+  "finding_id": "F-503e964807a2",
+  "child_synthesis_id": "S-92f73fa50f19",
+  "parent_synthesis_id": "S-d63d33d79ad9",
+  "check": {
+    "authorization_authenticity": "not_assessed",
+    "concurrency": "single-local-writer only; not a distributed lock",
+    "counts": {
+      "attempts": 1,
+      "evidence": 1,
+      "experiments": 1,
+      "findings": 1,
+      "questions": 2,
+      "syntheses": 2
+    },
+    "errors": [],
+    "needs_review_question_ids": [],
+    "ok": true,
+    "operation": "check",
+    "scientific_validity": "not_assessed",
+    "warnings": []
+  },
+  "note": "All data and reviews were synthetic; no experiment ran"
+}

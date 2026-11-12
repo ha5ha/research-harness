@@ -1,0 +1,33 @@
+{
+  "original": {
+    "LICENSE": "0ac66b2454d543ce21ffefa82da257b2f1b12439f72afe6e2fcb9be3980d4f14",
+    "SKILL.md": "79cbb0048d589a481a2bedbb248d9b4dc86b9c789b81cc153d0e506237d875b5",
+    "agents/openai.yaml": "a792267e15795f9ab4e067c344dea28c5795a41b8ce3fb99d2e1ec42563b614a",
+    "examples/run_demo.py": "cb577f0954dd71094f7c0189cac47462a674017ac23c380830ef2bfa9d5af997",
+    "references/cli.md": "62917abd9c6cf60a70fc0e9a4edce7fc51e01e9b19fbabff0567c2e243261e9e",
+    "references/evidence.md": "c4c25c2dcdd8a1182fe9e33d0d6f431d2ff9501a861e2f683c81ce46377af64f",
+    "references/protocol.md": "247eb3e458bfd6b81c89bd6b211e363dcb25da555e4d61635a9ae7e0dcc3a3ef",
+    "references/safety.md": "81243d29e18367f2804a7095e3e73a638b2cd7eaf4f6814fa7cc7548e706358a",
+    "references/synthesis.md": "1c05f385cbc279a8dc169e1fc2ea04b391b44b39cb07b76e66c1c3a15fac8e4a",
+    "references/workflow.md": "753786a1bd50cb4f6dd446316bb7f64fd010f0988bfb5eb8b96fc9c61e330214",
+    "scripts/rh.py": "0724d198be64986567a68f1690130c9c3a5bcb26b740a96106f3d64b5bd037bd",
+    "tests/test_rh.py": "ba6c4bf4ba82c3e02dde25ffcb1e0a19c87c0b20c1662b9fb4431f6bb9aef62f"
+  },
+  "revised": {
+    "LICENSE": "0ac66b2454d543ce21ffefa82da257b2f1b12439f72afe6e2fcb9be3980d4f14",
+    "SKILL.md": "b3dd3c0f83f1870aa8e46349b0b86440f3cae35d762ca17c0bebd52e2c582487",
+    "agents/openai.yaml": "a792267e15795f9ab4e067c344dea28c5795a41b8ce3fb99d2e1ec42563b614a",
+    "examples/run_demo.py": "5fbd0fc11a9be586096cd5aed5579fa72bc44309f0fa4a0b790d2d28d62844ad",
+    "references/adoption.md": "4ecad5323da5e0b648f60f1fb8ee3f818d7ac68c4889eb1baa2189cd6a82f5d2",
+    "references/analysis.md": "a386d76b676f5b6fdfaf5043b7d9f682181d0259cfcb1f4ee3b45bedc1fa26cc",
+    "references/cli.md": "39b6a43bbbae99193f34436d63e8a003c4507fb2d2d5d3b7c986e8ee7263c88c",
+    "references/continuity.md": "95b50a6dc1cab15b74f067aea03e85ab1b265c597009ee11776fe9f5c3368c30",
+    "references/evidence.md": "4726ac5b346023461e11b277c56c607432aea327e4f78f27f900535efc12bf67",
+    "references/protocol.md": "310a8d84d54e3e0b5ed659ce54a6a36232476e0e3ae4241396ef53d6d57de0b5",
+    "references/safety.md": "81243d29e18367f2804a7095e3e73a638b2cd7eaf4f6814fa7cc7548e706358a",
+    "references/synthesis.md": "ef14b5e07510b4f7a96428a007fa8042f2d6e5f41956fbd60781b6bbdcc6b2cc",
+    "references/workflow.md": "0174c582b7a361c082fe115c1b5c43f45b73c626b2c57730f0747fc7a5450ade",
+    "scripts/rh.py": "bdf477e1fe7d19f4de86ae87fb4ce28976ecc3bcc4c95b56a0cf9a1e2e9678e3",
+    "tests/test_rh.py": "9901e236e500b698122c833ec543165ceb4b5142e391ffb3bb142fe46136c9b2"
+  }
+}

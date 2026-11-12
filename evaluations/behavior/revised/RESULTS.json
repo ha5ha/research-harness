@@ -1,0 +1,196 @@
+{
+  "condition": "revised",
+  "cases": [
+    {
+      "case": "01_snapshot",
+      "authorized_work_completed": "Registered E-1c647f87a8c6 and saved content-addressed local snapshot",
+      "artifacts": [
+        {
+          "path": "cases/01_snapshot/research/objects/e5/e5b07d45f9e05b8a3905cdf26bcf7191afc66b5a77dd0d53d92d7ebe4c3ae5ed",
+          "sha256": "e5b07d45f9e05b8a3905cdf26bcf7191afc66b5a77dd0d53d92d7ebe4c3ae5ed",
+          "bytes": 24
+        },
+        {
+          "path": "cases/01_snapshot/research/questions/Q-508de0ebf137--can-the-supplied-observation-be-archived/evidence/E-1c647f87a8c6.json",
+          "sha256": "9a0fc99e6caa6dfbeac03084eaa3c3cb2253de14ade64fee2913759a9c7b0514",
+          "bytes": 507
+        },
+        {
+          "path": "cases/01_snapshot/RESPONSE.md",
+          "sha256": "125a1baf7d26f9709c03a43585f25d8560b738cd5046de83ee0e78b549c8bd61",
+          "bytes": 1443
+        }
+      ],
+      "limitations": [
+        "Local snapshot only, not backup or publication",
+        "No scientific review; question remains open",
+        "FOCUS remains unselected; original records preserved"
+      ],
+      "uncompleted_items": [
+        "Local snapshot only, not backup or publication",
+        "No scientific review; question remains open",
+        "FOCUS remains unselected; original records preserved"
+      ],
+      "original_inputs_unchanged": true
+    },
+    {
+      "case": "02_resume",
+      "authorized_work_completed": "Recovered current accepted correction and parent/child review needs in RESPONSE.md",
+      "artifacts": [
+        {
+          "path": "cases/02_resume/RESPONSE.md",
+          "sha256": "e972330f2e7dd27a59f6c7bb04e2292c214d5694e6e3c1c7a40841c94d939f02",
+          "bytes": 2550
+        }
+      ],
+      "limitations": [
+        "Existing FOCUS/question next-action conflict causes check exit 1",
+        "Historical syntheses remain stale and unmodified",
+        "No authorization for record repair or new review",
+        "Two synthetic samples only"
+      ],
+      "uncompleted_items": [
+        "Existing FOCUS/question next-action conflict causes check exit 1",
+        "Historical syntheses remain stale and unmodified",
+        "No authorization for record repair or new review",
+        "Two synthetic samples only"
+      ],
+      "original_inputs_unchanged": true
+    },
+    {
+      "case": "03_existing_analysis",
+      "authorized_work_completed": "Computed paired sample, repeat and seed metrics and reported seed reversal and missing coverage",
+      "artifacts": [
+        {
+          "path": "cases/03_existing_analysis/analysis/compute_existing.py",
+          "sha256": "1e7521ae41638c84cbbe7794d92a319c031a92a0b9a5f4585107d19602077cd3",
+          "bytes": 4060
+        },
+        {
+          "path": "cases/03_existing_analysis/analysis/paired_errors.csv",
+          "sha256": "8f932b32a2f21efe5ac1b40bba4cbdfd8f22e569dcdc0c34ff9ce621ad027a50",
+          "bytes": 220
+        },
+        {
+          "path": "cases/03_existing_analysis/analysis/repeat_metrics.csv",
+          "sha256": "f57b5245c1c26a1e6ec5c1bf91ed6ff0007ae830248732df68f33c247e2c2e9b",
+          "bytes": 212
+        },
+        {
+          "path": "cases/03_existing_analysis/analysis/seed_metrics.csv",
+          "sha256": "f94743b1aec7c574ab85d2b564ca73b03c83be136a774d2dec9a84ff731b07be",
+          "bytes": 188
+        },
+        {
+          "path": "cases/03_existing_analysis/analysis/summary.json",
+          "sha256": "1a7b0132e70b239f5b3f66d5fad0654c5a33e4f909a6460d80c1e026c2d71b1d",
+          "bytes": 2145
+        },
+        {
+          "path": "cases/03_existing_analysis/RESPONSE.md",
+          "sha256": "78fb13974dbff13138005d46455f2dc181e69a66e0b8ff135d5f6c35de45e949",
+          "bytes": 3926
+        }
+      ],
+      "limitations": [
+        "7/8 planned predictions; missing seed 2 repeat 2 sample b",
+        "No planned-full-coverage overall conclusion",
+        "Mechanism and generalization unresolved",
+        "No supplied native validator; local assertions only"
+      ],
+      "uncompleted_items": [
+        "7/8 planned predictions; missing seed 2 repeat 2 sample b",
+        "No planned-full-coverage overall conclusion",
+        "Mechanism and generalization unresolved",
+        "No supplied native validator; local assertions only"
+      ],
+      "original_inputs_unchanged": true
+    },
+    {
+      "case": "04_execution",
+      "authorized_work_completed": "Recovered unknown submission state and verified local contract identity in RESPONSE.md",
+      "artifacts": [
+        {
+          "path": "cases/04_execution/RESPONSE.md",
+          "sha256": "99c43b8643b7d953badd290622d62fa16039d802bf9825ad47fd6bab93130be3",
+          "bytes": 2111
+        }
+      ],
+      "limitations": [
+        "Live running/failed/completed status unknown",
+        "No present remote or compute authorization",
+        "Existing FOCUS/question conflict causes check exit 1",
+        "No state repair or retry performed"
+      ],
+      "uncompleted_items": [
+        "Live running/failed/completed status unknown",
+        "No present remote or compute authorization",
+        "Existing FOCUS/question conflict causes check exit 1",
+        "No state repair or retry performed"
+      ],
+      "original_inputs_unchanged": true
+    },
+    {
+      "case": "05_shared_evidence",
+      "authorized_work_completed": "Created explicit non-independent reuse link, proposed observation and partial proposed parent synthesis",
+      "artifacts": [
+        {
+          "path": "cases/05_shared_evidence/reports/stage-summary.md",
+          "sha256": "9aec058ab075af684477805d8fa04ab3123d48133bb6bf9e648d639c78c1e511",
+          "bytes": 2078
+        },
+        {
+          "path": "cases/05_shared_evidence/research/questions/Q-b948f194729b--what-can-the-shared-baseline-tell-us/subquestions/Q-34844c27dfb4--behavior-under-the-same-baseline/evidence/E-245ad530f940.json",
+          "sha256": "da662173e2e63e267446ef9aa81a9e885b1b89f02c4f35f34dfec5f3468bbc7c",
+          "bytes": 747
+        },
+        {
+          "path": "cases/05_shared_evidence/research/questions/Q-b948f194729b--what-can-the-shared-baseline-tell-us/subquestions/Q-34844c27dfb4--behavior-under-the-same-baseline/findings/F-d7c95aba57a7.json",
+          "sha256": "0f11d71d3d22a535dd44f6fb1586ea6ca8277def6e1bac70b27e204a15be2db2",
+          "bytes": 699
+        },
+        {
+          "path": "cases/05_shared_evidence/research/questions/Q-b948f194729b--what-can-the-shared-baseline-tell-us/syntheses/S-a6aeef7c8cfe/record.json",
+          "sha256": "6ee95388b37f47f9719862c28000e5300fa20bb4dc9fbc4638850737114c7815",
+          "bytes": 1307
+        },
+        {
+          "path": "cases/05_shared_evidence/research/questions/Q-b948f194729b--what-can-the-shared-baseline-tell-us/syntheses/S-a6aeef7c8cfe/report.md",
+          "sha256": "9aec058ab075af684477805d8fa04ab3123d48133bb6bf9e648d639c78c1e511",
+          "bytes": 2078
+        },
+        {
+          "path": "cases/05_shared_evidence/RESPONSE.md",
+          "sha256": "35ef77a954cd4bf79ef6f9254a8a71afe0e03e20ecbe501b773c4e3c2cb852af",
+          "bytes": 1727
+        }
+      ],
+      "limitations": [
+        "Only original two synthetic baseline samples, no adapted comparison",
+        "No accepted finding or reviewed synthesis",
+        "Both children and parent remain open",
+        "FOCUS remains unselected; original records preserved"
+      ],
+      "uncompleted_items": [
+        "Only original two synthetic baseline samples, no adapted comparison",
+        "No accepted finding or reviewed synthesis",
+        "Both children and parent remain open",
+        "FOCUS remains unselected; original records preserved"
+      ],
+      "original_inputs_unchanged": true
+    }
+  ],
+  "constraints": {
+    "network_used": false,
+    "real_remote_used": false,
+    "real_experiments_run": false,
+    "original_inputs_changed": false,
+    "scientific_reviews_performed": false
+  },
+  "records": [
+    "COMMANDS.json",
+    "INPUT_MANIFEST.json",
+    "VALIDATION.json",
+    "verify_outputs.py"
+  ]
+}

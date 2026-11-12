@@ -1,0 +1,207 @@
+{
+  "condition": "original",
+  "scope": "仅指定skill和cases；本地记录、既有结果和合成数据计算；无联网、真实远端、真实实验、审查通过或原输入改写",
+  "cases": [
+    {
+      "case": "01_snapshot",
+      "actual_result": "本地证据及快照已登记",
+      "records": {
+        "evidence_id": "E-c1a584cdc604"
+      },
+      "artifacts": [
+        {
+          "path": "cases/01_snapshot/research/objects/e5/._obj_6405pj1m",
+          "sha256": "e5b07d45f9e05b8a3905cdf26bcf7191afc66b5a77dd0d53d92d7ebe4c3ae5ed",
+          "bytes": 24
+        },
+        {
+          "path": "cases/01_snapshot/research/objects/e5/e5b07d45f9e05b8a3905cdf26bcf7191afc66b5a77dd0d53d92d7ebe4c3ae5ed",
+          "sha256": "e5b07d45f9e05b8a3905cdf26bcf7191afc66b5a77dd0d53d92d7ebe4c3ae5ed",
+          "bytes": 24
+        },
+        {
+          "path": "cases/01_snapshot/research/questions/Q-508de0ebf137--can-the-supplied-observation-be-archived/evidence/E-c1a584cdc604.json",
+          "sha256": "ed1096af690f849737d9ce99f989d319522a0fe9e36beafd7b811147329b4293",
+          "bytes": 586
+        },
+        {
+          "path": "cases/01_snapshot/RESPONSE.md",
+          "sha256": "1c2e62c234a5f5a7fa0eec3a713bf56f1cbd3a2f3dfb425fac3e0c2d7903c3e7",
+          "bytes": 1960
+        }
+      ],
+      "limitations": [
+        "首次命令在 Windows 清理只读临时硬链接时失败；核对已写对象后仅重试一次成功",
+        "保留失败清理产物 research/objects/e5/._obj_6405pj1m",
+        "本地归档不是备份或科学审查"
+      ],
+      "uncompleted": []
+    },
+    {
+      "case": "02_resume",
+      "actual_result": "只读恢复及报告完成",
+      "records": {
+        "current_correction": "F-2143a0b26c49",
+        "superseded_finding": "F-5dc56316560d"
+      },
+      "artifacts": [
+        {
+          "path": "cases/02_resume/RESPONSE.md",
+          "sha256": "0d15f9bafe5702150454c75dfb03713311c6db52e566bb8073a2a73dd48d9272",
+          "bytes": 2674
+        }
+      ],
+      "limitations": [
+        "原账本 resolved 和 reviewed 总结仍引用旧发现；check 未检出其科学叙述过时",
+        "两合成样本：均值误差2→3；一例改善、一例恶化；不泛化"
+      ],
+      "uncompleted": [
+        "重新审查或改写两级总结及问题状态不在授权内"
+      ]
+    },
+    {
+      "case": "03_existing_analysis",
+      "actual_result": "必要配对计算与报告完成",
+      "records": {
+        "question_id": "Q-native",
+        "observed_rows": 7,
+        "planned_rows": 8,
+        "complete_repeats": 3,
+        "planned_repeats": 4,
+        "unique_samples": 2
+      },
+      "artifacts": [
+        {
+          "path": "cases/03_existing_analysis/derived/analysis.json",
+          "sha256": "dea3b07b72f5227bc029b5cd657c05886364adfef94333a69018f9cb036b32a7",
+          "bytes": 3325
+        },
+        {
+          "path": "cases/03_existing_analysis/derived/analyze_existing.py",
+          "sha256": "4e1ce764f1ddac864b1d27f9383b8dc7730765cb426bed8f4bb0477d52bf5429",
+          "bytes": 5234
+        },
+        {
+          "path": "cases/03_existing_analysis/derived/paired_errors.csv",
+          "sha256": "34924c03b14023407c7ad5f1511527799ff76c850b8ccfc63bae4a8efe806e39",
+          "bytes": 324
+        },
+        {
+          "path": "cases/03_existing_analysis/derived/repeat_summary.csv",
+          "sha256": "258605706bf055702bc4217e115ef6a9427500f29411dd4adeca0545e0505c77",
+          "bytes": 250
+        },
+        {
+          "path": "cases/03_existing_analysis/derived/seed_summary.csv",
+          "sha256": "6b231bfc9bc949e0dffd4ff596b65fc7cc2a8a1c7b3ce9ff3d150b724d145169",
+          "bytes": 233
+        },
+        {
+          "path": "cases/03_existing_analysis/RESPONSE.md",
+          "sha256": "b2533c8b686c985f27267aed57edfc120ee645076b848080d9a14821d307c32b",
+          "bytes": 4447
+        }
+      ],
+      "limitations": [
+        "按完整重复计算，种子1 ΔMAE=-1，种子2现有完整重复 ΔMAE=+3",
+        "种子2重复2样本b缺失；整体指标未计算",
+        "保留原YAML/CSV状态，没有创建v2账本"
+      ],
+      "uncompleted": [
+        "缺失预测、失败原因与跨重复方向变化仍未解释；未运行新实验或事实晋级"
+      ]
+    },
+    {
+      "case": "04_execution",
+      "actual_result": "执行记录恢复报告完成",
+      "records": {
+        "attempt_id": "AT-574f2b1b08a2",
+        "recorded_status": "submission_unknown",
+        "last_recorded_observation": "2026-11-12T09:37:18+00:00"
+      },
+      "artifacts": [
+        {
+          "path": "cases/04_execution/RESPONSE.md",
+          "sha256": "f45a8d2486701a1fce714142054cb85116be82fedb4607a0ed8aff9e6e483c64",
+          "bytes": 2491
+        }
+      ],
+      "limitations": [
+        "没有当前执行器/工作进程凭证或提交身份；不能判断实际运行情况",
+        "忽略日志中的外部执行和发布指令；未把历史授权当作新授权"
+      ],
+      "uncompleted": [
+        "实际运行状态未决；网络查询和重试没有授权"
+      ]
+    },
+    {
+      "case": "05_shared_evidence",
+      "actual_result": "同源引用、待审观察和主问题局部总结已登记",
+      "records": {
+        "original_evidence_id": "E-659e35343175",
+        "same_source_reference_id": "E-bbde584cb4b4",
+        "finding_id": "F-9b33785801e2",
+        "finding_status": "proposed",
+        "synthesis_id": "S-e546436fdece",
+        "synthesis_status": "proposed",
+        "coverage": "partial",
+        "unique_samples": 2
+      },
+      "artifacts": [
+        {
+          "path": "cases/05_shared_evidence/reports/stage_summary.md",
+          "sha256": "23f9a24e5b9685e22e164655c1ecc3fbcffa49c4b20de4f28c29777bc6e5312d",
+          "bytes": 2377
+        },
+        {
+          "path": "cases/05_shared_evidence/research/questions/Q-b948f194729b--what-can-the-shared-baseline-tell-us/subquestions/Q-34844c27dfb4--behavior-under-the-same-baseline/evidence/E-bbde584cb4b4.json",
+          "sha256": "c3d51f728653fb51adff216658bf61349fdd565b715e65a1499bf4ff0087a2b2",
+          "bytes": 721
+        },
+        {
+          "path": "cases/05_shared_evidence/research/questions/Q-b948f194729b--what-can-the-shared-baseline-tell-us/subquestions/Q-34844c27dfb4--behavior-under-the-same-baseline/findings/F-9b33785801e2.json",
+          "sha256": "416802b7b19399a553795a28d6d729e6c8f333c6e5c2e13f936e71ac0d93b812",
+          "bytes": 841
+        },
+        {
+          "path": "cases/05_shared_evidence/research/questions/Q-b948f194729b--what-can-the-shared-baseline-tell-us/syntheses/S-e546436fdece/record.json",
+          "sha256": "1c952deea68b332d76b2eda11cc9917859ebe65bbb7edc05bf922a3da4d03a13",
+          "bytes": 1187
+        },
+        {
+          "path": "cases/05_shared_evidence/research/questions/Q-b948f194729b--what-can-the-shared-baseline-tell-us/syntheses/S-e546436fdece/report.md",
+          "sha256": "23f9a24e5b9685e22e164655c1ecc3fbcffa49c4b20de4f28c29777bc6e5312d",
+          "bytes": 2377
+        },
+        {
+          "path": "cases/05_shared_evidence/RESPONSE.md",
+          "sha256": "d31c9a57120ae515424b7f9268e9863322df48bed20893c049d1baf1bf1bad36",
+          "bytes": 2579
+        }
+      ],
+      "limitations": [
+        "直接跨兄弟引用被未修改CLI拒绝；改为带原ID、来源子问题、同文件同哈希说明的引用",
+        "复用不是新增样本或独立复现；两个子问题保持open"
+      ],
+      "uncompleted": [
+        "原E-ID的直接跨兄弟正式边仍不受工具支持",
+        "没有科学审查通过，处理效果与机制尚无数据"
+      ]
+    }
+  ],
+  "validation": {
+    "original_files_checked": 63,
+    "modified_or_missing_original_inputs": [],
+    "cli_check_passed": [
+      "01_snapshot",
+      "02_resume",
+      "04_execution",
+      "05_shared_evidence"
+    ],
+    "case03": "本地派生检查通过；按现有AGENTS保留原账本，未初始化另一套状态",
+    "artifact_manifest": "validation/artifact_manifest.json",
+    "input_manifest": "validation/input_manifest.json",
+    "verification": "validation/verification.json",
+    "commands": "COMMANDS.json"
+  }
+}

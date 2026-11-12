@@ -1,0 +1,111 @@
+{
+  "original": {
+    "original_input_files": 51,
+    "changed_inputs": [],
+    "cases": {
+      "01_snapshot": {
+        "snapshot_matches_source": true,
+        "temporary_object_count": 1
+      },
+      "02_resume": {
+        "only_report_added": true,
+        "accepted_correction_retained": true
+      },
+      "03_existing_analysis": {
+        "observed_rows": 7,
+        "planned_rows": 8,
+        "seed_table": "derived/seed_summary.csv",
+        "derived_rows": [
+          {
+            "seed": "1",
+            "complete_repeats": "2",
+            "planned_repeats": "2",
+            "source_mae_complete_repeat_mean": "2.0",
+            "adapted_mae_complete_repeat_mean": "1.0",
+            "delta_mae_complete_repeat_mean": "-1.0",
+            "between_repeat_delta_sample_sd": "0.0",
+            "provisional": "False"
+          },
+          {
+            "seed": "2",
+            "complete_repeats": "1",
+            "planned_repeats": "2",
+            "source_mae_complete_repeat_mean": "2.0",
+            "adapted_mae_complete_repeat_mean": "5.0",
+            "delta_mae_complete_repeat_mean": "3.0",
+            "between_repeat_delta_sample_sd": "",
+            "provisional": "True"
+          }
+        ],
+        "no_shadow_ledger": true
+      },
+      "04_execution": {
+        "only_report_added": true,
+        "unknown_attempt_retained": true
+      },
+      "05_shared_evidence": {
+        "explicit_origin_trace": true,
+        "same_bytes": true,
+        "machine_link": false,
+        "finding_and_synthesis_proposed": true,
+        "all_questions_open": true
+      }
+    }
+  },
+  "revised": {
+    "original_input_files": 51,
+    "changed_inputs": [],
+    "cases": {
+      "01_snapshot": {
+        "snapshot_matches_source": true,
+        "temporary_object_count": 0
+      },
+      "02_resume": {
+        "only_report_added": true,
+        "accepted_correction_retained": true
+      },
+      "03_existing_analysis": {
+        "observed_rows": 7,
+        "planned_rows": 8,
+        "seed_table": "analysis/seed_metrics.csv",
+        "derived_rows": [
+          {
+            "seed": "1",
+            "complete_repeats": "2",
+            "planned_repeats": "2",
+            "full_seed_coverage": "True",
+            "source_mae": "2.0",
+            "adapted_mae": "1.0",
+            "delta_mae": "-1.0",
+            "worsening_rate": "0",
+            "delta_repeat_sample_sd": "0.0"
+          },
+          {
+            "seed": "2",
+            "complete_repeats": "1",
+            "planned_repeats": "2",
+            "full_seed_coverage": "False",
+            "source_mae": "2.0",
+            "adapted_mae": "5.0",
+            "delta_mae": "3.0",
+            "worsening_rate": "1",
+            "delta_repeat_sample_sd": ""
+          }
+        ],
+        "no_shadow_ledger": true
+      },
+      "04_execution": {
+        "only_report_added": true,
+        "unknown_attempt_retained": true
+      },
+      "05_shared_evidence": {
+        "explicit_origin_trace": true,
+        "same_bytes": true,
+        "machine_link": true,
+        "finding_and_synthesis_proposed": true,
+        "all_questions_open": true
+      }
+    }
+  },
+  "scope": "Mechanical artifact checks; substantive reports separately read against OUTCOME_RUBRIC.json"
+}

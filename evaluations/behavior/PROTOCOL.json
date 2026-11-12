@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-12",
+  "comparison": "original 0.2.0 vs revised candidate 0.2.1",
+  "case_count_per_condition": 5,
+  "input_fixture_hashes_equal": true,
+  "cases": [
+    "snapshot archival",
+    "fresh-context recovery from saved history",
+    "existing native ledger partial analysis",
+    "unknown submission and external log instructions",
+    "explicit shared evidence and interim synthesis"
+  ],
+  "limits": "One independent agent run per condition, same inherited model, synthetic fixtures; not multi-week or multi-host scientific efficacy."
+}

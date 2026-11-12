@@ -1,0 +1,36 @@
+test_abandonment_requires_reason (test_rh.HarnessCLITests.test_abandonment_requires_reason) ... ok
+test_attempts_are_independent_and_receipted (test_rh.HarnessCLITests.test_attempts_are_independent_and_receipted) ... ok
+test_confirmatory_freeze_requires_more_fields (test_rh.HarnessCLITests.test_confirmatory_freeze_requires_more_fields) ... ok
+test_correction_chain_keeps_old_findings_historical (test_rh.HarnessCLITests.test_correction_chain_keeps_old_findings_historical) ... ok
+test_correction_invalidates_leaf_and_parent_without_deleting_history (test_rh.HarnessCLITests.test_correction_invalidates_leaf_and_parent_without_deleting_history) ... ok
+test_corrupt_existing_snapshot_is_not_reused (test_rh.HarnessCLITests.test_corrupt_existing_snapshot_is_not_reused) ... ok
+test_cross_branch_findings_are_rejected (test_rh.HarnessCLITests.test_cross_branch_findings_are_rejected) ... ok
+test_evidence_snapshot_and_tamper_detection (test_rh.HarnessCLITests.test_evidence_snapshot_and_tamper_detection) ... ok
+test_explicit_cross_branch_reuse_preserves_origin (test_rh.HarnessCLITests.test_explicit_cross_branch_reuse_preserves_origin) ... ok
+test_exploration_also_requires_budget_and_reproducibility (test_rh.HarnessCLITests.test_exploration_also_requires_budget_and_reproducibility) ... ok
+test_focus_has_one_authoritative_next_action (test_rh.HarnessCLITests.test_focus_has_one_authoritative_next_action) ... ok
+test_freeze_and_change_detection (test_rh.HarnessCLITests.test_freeze_and_change_detection) ... ok
+test_hypothesis_cannot_be_accepted (test_rh.HarnessCLITests.test_hypothesis_cannot_be_accepted) ... ok
+test_incomplete_child_prevents_parent_resolution (test_rh.HarnessCLITests.test_incomplete_child_prevents_parent_resolution) ... ok
+test_incomplete_legacy_freeze_remains_readable_but_cannot_prepare (test_rh.HarnessCLITests.test_incomplete_legacy_freeze_remains_readable_but_cannot_prepare) ... ok
+test_init_valid_structure_and_no_clobber (test_rh.HarnessCLITests.test_init_valid_structure_and_no_clobber) ... ok
+test_legacy_focus_conflict_is_detected_and_explicitly_repaired (test_rh.HarnessCLITests.test_legacy_focus_conflict_is_detected_and_explicitly_repaired) ... ok
+test_legacy_report_without_dependency_snapshot_requires_review (test_rh.HarnessCLITests.test_legacy_report_without_dependency_snapshot_requires_review) ... ok
+test_nested_questions_are_registered_and_recoverable (test_rh.HarnessCLITests.test_nested_questions_are_registered_and_recoverable) ... ok
+test_no_execution_side_effect_and_local_lock (test_rh.HarnessCLITests.test_no_execution_side_effect_and_local_lock) ... ok
+test_old_parent_synthesis_is_historical_when_child_reopens (test_rh.HarnessCLITests.test_old_parent_synthesis_is_historical_when_child_reopens) ... ok
+test_orphan_parent_and_correction_cycle_have_structured_errors (test_rh.HarnessCLITests.test_orphan_parent_and_correction_cycle_have_structured_errors) ... ok
+test_proposed_and_rejected_corrections_do_not_replace_accepted_finding (test_rh.HarnessCLITests.test_proposed_and_rejected_corrections_do_not_replace_accepted_finding) ... ok
+test_protocol_inspection_does_not_mutate_native_records (test_rh.HarnessCLITests.test_protocol_inspection_does_not_mutate_native_records) ... ok
+test_resolution_is_blocked_by_active_or_uncertain_attempt (test_rh.HarnessCLITests.test_resolution_is_blocked_by_active_or_uncertain_attempt) ... ok
+test_reviewed_child_and_parent_synthesis_close_tree (test_rh.HarnessCLITests.test_reviewed_child_and_parent_synthesis_close_tree) ... ok
+test_reviewer_cannot_accept_tampered_source (test_rh.HarnessCLITests.test_reviewer_cannot_accept_tampered_source) ... ok
+test_sensitive_paths_and_escape_are_rejected (test_rh.HarnessCLITests.test_sensitive_paths_and_escape_are_rejected) ... ok
+test_snapshot_has_no_temporary_links_and_reuses_verified_object (test_rh.HarnessCLITests.test_snapshot_has_no_temporary_links_and_reuses_verified_object) ... ok
+test_symlink_escape_is_rejected (test_rh.HarnessCLITests.test_symlink_escape_is_rejected) ... skipped "symlink unavailable: [WinError 1314] 客户端没有所需的特权。: 'TEMP_ROOT\\\\rh-external-np8uno9d\\\\evidence.txt' -> 'TEMP_ROOT\\\\rh-v2-test-eflviboz\\\\outside-link.txt'"
+test_unknown_submission_blocks_new_attempt_preparation (test_rh.HarnessCLITests.test_unknown_submission_blocks_new_attempt_preparation) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 7.071s
+
+OK (skipped=1)

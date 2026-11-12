@@ -1,0 +1,39 @@
+{
+  "platform": "Windows",
+  "checked_staged_files": 58,
+  "git_default_longpath_setting_unchanged": true,
+  "three_evidence_archives_preserved_exactly": true,
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "tools/validate_release.py",
+        "."
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "skills/research-harness/examples/run_demo.py"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "limits": "Git index export, not remote GitHub CI or installation by every agent host"
+}

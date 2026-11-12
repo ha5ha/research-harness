@@ -1,0 +1,146 @@
+{
+  "original": {
+    "01_snapshot/RESPONSE.md": {
+      "sha256": "1c2e62c234a5f5a7fa0eec3a713bf56f1cbd3a2f3dfb425fac3e0c2d7903c3e7",
+      "bytes": 1960
+    },
+    "02_resume/RESPONSE.md": {
+      "sha256": "0d15f9bafe5702150454c75dfb03713311c6db52e566bb8073a2a73dd48d9272",
+      "bytes": 2674
+    },
+    "03_existing_analysis/RESPONSE.md": {
+      "sha256": "b2533c8b686c985f27267aed57edfc120ee645076b848080d9a14821d307c32b",
+      "bytes": 4447
+    },
+    "04_execution/RESPONSE.md": {
+      "sha256": "f45a8d2486701a1fce714142054cb85116be82fedb4607a0ed8aff9e6e483c64",
+      "bytes": 2491
+    },
+    "05_shared_evidence/RESPONSE.md": {
+      "sha256": "d31c9a57120ae515424b7f9268e9863322df48bed20893c049d1baf1bf1bad36",
+      "bytes": 2579
+    },
+    "01_snapshot/research/objects/e5/._obj_6405pj1m": {
+      "sha256": "e5b07d45f9e05b8a3905cdf26bcf7191afc66b5a77dd0d53d92d7ebe4c3ae5ed",
+      "bytes": 24
+    },
+    "01_snapshot/research/objects/e5/e5b07d45f9e05b8a3905cdf26bcf7191afc66b5a77dd0d53d92d7ebe4c3ae5ed": {
+      "sha256": "e5b07d45f9e05b8a3905cdf26bcf7191afc66b5a77dd0d53d92d7ebe4c3ae5ed",
+      "bytes": 24
+    },
+    "01_snapshot/research/questions/Q-508de0ebf137--can-the-supplied-observation-be-archived/evidence/E-c1a584cdc604.json": {
+      "sha256": "ed1096af690f849737d9ce99f989d319522a0fe9e36beafd7b811147329b4293",
+      "bytes": 586
+    },
+    "03_existing_analysis/derived/analysis.json": {
+      "sha256": "dea3b07b72f5227bc029b5cd657c05886364adfef94333a69018f9cb036b32a7",
+      "bytes": 3325
+    },
+    "03_existing_analysis/derived/analyze_existing.py": {
+      "sha256": "4e1ce764f1ddac864b1d27f9383b8dc7730765cb426bed8f4bb0477d52bf5429",
+      "bytes": 5234
+    },
+    "03_existing_analysis/derived/paired_errors.csv": {
+      "sha256": "34924c03b14023407c7ad5f1511527799ff76c850b8ccfc63bae4a8efe806e39",
+      "bytes": 324
+    },
+    "03_existing_analysis/derived/repeat_summary.csv": {
+      "sha256": "258605706bf055702bc4217e115ef6a9427500f29411dd4adeca0545e0505c77",
+      "bytes": 250
+    },
+    "03_existing_analysis/derived/seed_summary.csv": {
+      "sha256": "6b231bfc9bc949e0dffd4ff596b65fc7cc2a8a1c7b3ce9ff3d150b724d145169",
+      "bytes": 233
+    },
+    "05_shared_evidence/reports/stage_summary.md": {
+      "sha256": "23f9a24e5b9685e22e164655c1ecc3fbcffa49c4b20de4f28c29777bc6e5312d",
+      "bytes": 2377
+    },
+    "05_shared_evidence/research/questions/Q-b948f194729b--what-can-the-shared-baseline-tell-us/subquestions/Q-34844c27dfb4--behavior-under-the-same-baseline/evidence/E-bbde584cb4b4.json": {
+      "sha256": "c3d51f728653fb51adff216658bf61349fdd565b715e65a1499bf4ff0087a2b2",
+      "bytes": 721
+    },
+    "05_shared_evidence/research/questions/Q-b948f194729b--what-can-the-shared-baseline-tell-us/subquestions/Q-34844c27dfb4--behavior-under-the-same-baseline/findings/F-9b33785801e2.json": {
+      "sha256": "416802b7b19399a553795a28d6d729e6c8f333c6e5c2e13f936e71ac0d93b812",
+      "bytes": 841
+    },
+    "05_shared_evidence/research/questions/Q-b948f194729b--what-can-the-shared-baseline-tell-us/syntheses/S-e546436fdece/record.json": {
+      "sha256": "1c952deea68b332d76b2eda11cc9917859ebe65bbb7edc05bf922a3da4d03a13",
+      "bytes": 1187
+    },
+    "05_shared_evidence/research/questions/Q-b948f194729b--what-can-the-shared-baseline-tell-us/syntheses/S-e546436fdece/report.md": {
+      "sha256": "23f9a24e5b9685e22e164655c1ecc3fbcffa49c4b20de4f28c29777bc6e5312d",
+      "bytes": 2377
+    }
+  },
+  "revised": {
+    "01_snapshot/RESPONSE.md": {
+      "sha256": "125a1baf7d26f9709c03a43585f25d8560b738cd5046de83ee0e78b549c8bd61",
+      "bytes": 1443
+    },
+    "02_resume/RESPONSE.md": {
+      "sha256": "e972330f2e7dd27a59f6c7bb04e2292c214d5694e6e3c1c7a40841c94d939f02",
+      "bytes": 2550
+    },
+    "03_existing_analysis/RESPONSE.md": {
+      "sha256": "78fb13974dbff13138005d46455f2dc181e69a66e0b8ff135d5f6c35de45e949",
+      "bytes": 3926
+    },
+    "04_execution/RESPONSE.md": {
+      "sha256": "99c43b8643b7d953badd290622d62fa16039d802bf9825ad47fd6bab93130be3",
+      "bytes": 2111
+    },
+    "05_shared_evidence/RESPONSE.md": {
+      "sha256": "35ef77a954cd4bf79ef6f9254a8a71afe0e03e20ecbe501b773c4e3c2cb852af",
+      "bytes": 1727
+    },
+    "01_snapshot/research/objects/e5/e5b07d45f9e05b8a3905cdf26bcf7191afc66b5a77dd0d53d92d7ebe4c3ae5ed": {
+      "sha256": "e5b07d45f9e05b8a3905cdf26bcf7191afc66b5a77dd0d53d92d7ebe4c3ae5ed",
+      "bytes": 24
+    },
+    "01_snapshot/research/questions/Q-508de0ebf137--can-the-supplied-observation-be-archived/evidence/E-1c647f87a8c6.json": {
+      "sha256": "9a0fc99e6caa6dfbeac03084eaa3c3cb2253de14ade64fee2913759a9c7b0514",
+      "bytes": 507
+    },
+    "03_existing_analysis/analysis/compute_existing.py": {
+      "sha256": "1e7521ae41638c84cbbe7794d92a319c031a92a0b9a5f4585107d19602077cd3",
+      "bytes": 4060
+    },
+    "03_existing_analysis/analysis/paired_errors.csv": {
+      "sha256": "8f932b32a2f21efe5ac1b40bba4cbdfd8f22e569dcdc0c34ff9ce621ad027a50",
+      "bytes": 220
+    },
+    "03_existing_analysis/analysis/repeat_metrics.csv": {
+      "sha256": "f57b5245c1c26a1e6ec5c1bf91ed6ff0007ae830248732df68f33c247e2c2e9b",
+      "bytes": 212
+    },
+    "03_existing_analysis/analysis/seed_metrics.csv": {
+      "sha256": "f94743b1aec7c574ab85d2b564ca73b03c83be136a774d2dec9a84ff731b07be",
+      "bytes": 188
+    },
+    "03_existing_analysis/analysis/summary.json": {
+      "sha256": "1a7b0132e70b239f5b3f66d5fad0654c5a33e4f909a6460d80c1e026c2d71b1d",
+      "bytes": 2145
+    },
+    "05_shared_evidence/reports/stage-summary.md": {
+      "sha256": "9aec058ab075af684477805d8fa04ab3123d48133bb6bf9e648d639c78c1e511",
+      "bytes": 2078
+    },
+    "05_shared_evidence/research/questions/Q-b948f194729b--what-can-the-shared-baseline-tell-us/subquestions/Q-34844c27dfb4--behavior-under-the-same-baseline/evidence/E-245ad530f940.json": {
+      "sha256": "da662173e2e63e267446ef9aa81a9e885b1b89f02c4f35f34dfec5f3468bbc7c",
+      "bytes": 747
+    },
+    "05_shared_evidence/research/questions/Q-b948f194729b--what-can-the-shared-baseline-tell-us/subquestions/Q-34844c27dfb4--behavior-under-the-same-baseline/findings/F-d7c95aba57a7.json": {
+      "sha256": "0f11d71d3d22a535dd44f6fb1586ea6ca8277def6e1bac70b27e204a15be2db2",
+      "bytes": 699
+    },
+    "05_shared_evidence/research/questions/Q-b948f194729b--what-can-the-shared-baseline-tell-us/syntheses/S-a6aeef7c8cfe/record.json": {
+      "sha256": "6ee95388b37f47f9719862c28000e5300fa20bb4dc9fbc4638850737114c7815",
+      "bytes": 1307
+    },
+    "05_shared_evidence/research/questions/Q-b948f194729b--what-can-the-shared-baseline-tell-us/syntheses/S-a6aeef7c8cfe/report.md": {
+      "sha256": "9aec058ab075af684477805d8fa04ab3123d48133bb6bf9e648d639c78c1e511",
+      "bytes": 2078
+    }
+  }
+}
