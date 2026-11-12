@@ -1,0 +1,20 @@
+{
+  "id": null,
+  "status": "observation",
+  "promotion_role": "context_only",
+  "statement": null,
+  "scope": null,
+  "systems_or_model_ids": [],
+  "cohort_ids": [],
+  "statistical_unit": null,
+  "baseline_and_protocol": null,
+  "source_task_id": null,
+  "attempt_ids": [],
+  "code_ref": null,
+  "config_ref": null,
+  "evidence_ids": [],
+  "counterevidence_ids": [],
+  "verification": null,
+  "limitations": [],
+  "supersedes_id": null
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+dist/
+.DS_Store
+/MANIFEST.json
+/SHA256SUMS.txt

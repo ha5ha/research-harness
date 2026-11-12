@@ -1,0 +1,31 @@
+name: Validate package
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.10', '3.12']
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Check package structure and integrity
+        run: python tools/validate_release.py .
+      - name: Exercise research helper behavior
+        run: python -B -m unittest discover -s skills/research-harness/tests -p "test_*.py"
+      - name: Exercise release validation failures
+        run: python -B -m unittest discover -s tests -p "test_*.py"

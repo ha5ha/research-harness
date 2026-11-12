@@ -1,0 +1,7 @@
+{
+  "name": "research-harness",
+  "version": "0.1.1",
+  "description": "Question-led research continuity, experiment contracts, and scoped evidence for general-purpose coding agents.",
+  "author": {"name": "Research Harness contributors"},
+  "skills": "./skills/"
+}

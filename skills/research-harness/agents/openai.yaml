@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Harness"
+  short_description: "Keep research questions, experiments, and evidence aligned"
+  default_prompt: "Use $research-harness to recover this project's research state and carry out the next authorized action."
