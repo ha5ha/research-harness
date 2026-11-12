@@ -1,0 +1,32 @@
+{
+  "source_commit": "1f89bea1d36bbfe236edccd05df64a35b20d1f67",
+  "installer": "GitHub CLI 2.103.3 gh skill install",
+  "checks": [
+    {
+      "host_layout": "codex",
+      "exit_code": 0,
+      "project_skill_location": ".agents/skills/research-harness",
+      "version": "0.2.1",
+      "support_files_match_source": true,
+      "live_model_session": true
+    },
+    {
+      "host_layout": "claude-code",
+      "exit_code": 0,
+      "project_skill_location": ".claude/skills/research-harness",
+      "version": "0.2.1",
+      "support_files_match_source": true,
+      "live_model_session": false
+    },
+    {
+      "host_layout": "gemini-cli",
+      "exit_code": 0,
+      "project_skill_location": ".agents/skills/research-harness",
+      "version": "0.2.1",
+      "support_files_match_source": true,
+      "live_model_session": false
+    }
+  ],
+  "scope": "Host-specific installation layout and contents; only Codex live session separately tested",
+  "limits": "No claim of Claude/Gemini model behavior; no personal or global agent configuration changed"
+}

@@ -10,5 +10,6 @@
 - Attempts: reconcile unknown submission before preparing another attempt for the same experiment; keep the documented example consistent with transitions.
 - Shared evidence: explicit provenance-preserving links, marked as reuse rather than independent replication.
 - Distribution: root MIT, version, static validator, reproducible non-overwriting archive builder and CI configuration.
+- Publication: preserve the original Git history and optional plugin adapters, verify their versions, execute all four CI jobs, and install from the published GitHub commit into an isolated project.
 
 Schema remains 2. Existing 0.2.0 reports without dependency snapshots are historical and require new reviewed syntheses. v1/native migration remains separate. See evaluations/REPORT.zh-CN.md for observed tests and limits.

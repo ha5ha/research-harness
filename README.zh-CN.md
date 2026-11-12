@@ -2,7 +2,7 @@
 
 让通用 coding agent 能够围绕问题、实验和证据持续承接科研。核心工作流不依赖 Codex；`agents/openai.yaml` 只是可选界面元数据。所有宿主采用各自安装和权限机制；本包没有模型 API、账号、MCP、远端服务或调度器依赖。
 
-[English](README.md) · [Skill 入口](skills/research-harness/SKILL.md) · [本次改进](CHANGELOG.md) · [实际测试](evaluations/REPORT.zh-CN.md) · [MIT](LICENSE)
+[English](README.md) · [Skill 入口](skills/research-harness/SKILL.md) · [本次改进](CHANGELOG.md) · [实际测试](evaluations/REPORT.zh-CN.md) · [发布与跨平台验证](evaluations/PUBLISH.zh-CN.md) · [MIT](LICENSE)
 
 ## 安装与使用
 
@@ -11,6 +11,14 @@
 GitHub 安装源：[research-harness skill 目录](https://github.com/ha5ha/research-harness/tree/main/skills/research-harness)。完整包与单 skill 包在 [Releases](https://github.com/ha5ha/research-harness/releases) 提供。可让支持该格式的 agent 按此链接安装完整目录；安装不会创建或迁移科研账本。
 
 Codex 的安装示例：让 `$skill-installer` 从上述 GitHub 目录安装 `research-harness`，下一轮即可调用。仓库另附 `plugin.json` 和 `.codex-plugin/plugin.json` 作为可选打包适配，均不改变通用核心。[市场介绍材料](MARKETPLACE.md) 可用于提交列表；实际审核取决于目标市场。
+
+使用支持 `gh skill` 的 GitHub CLI（本次实测 2.103.3），也可以在目标项目安装固定版本：
+
+```text
+gh skill install ha5ha/research-harness skills/research-harness --pin v0.2.1 --agent codex --scope project
+```
+
+将 `codex` 换成 `claude-code` 或 `gemini-cli` 可选择对应目录；这三种安装路径均已实际验证，Codex 另通过了真实会话发现测试。Claude/Gemini 的模型执行行为尚未验证。
 
 安装后可直接说：
 

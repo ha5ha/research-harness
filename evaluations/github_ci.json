@@ -1,0 +1,43 @@
+{
+  "head_sha": "1f89bea1d36bbfe236edccd05df64a35b20d1f67",
+  "status": "completed",
+  "conclusion": "success",
+  "url": "https://github.com/ha5ha/research-harness/actions/runs/43202595729",
+  "jobs": [
+    {
+      "name": "validate (ubuntu-latest, 3.10)",
+      "conclusion": "success",
+      "url": "https://github.com/ha5ha/research-harness/actions/runs/43202595729/job/131129561906"
+    },
+    {
+      "name": "validate (windows-latest, 3.10)",
+      "conclusion": "success",
+      "url": "https://github.com/ha5ha/research-harness/actions/runs/43202595729/job/131129562200"
+    },
+    {
+      "name": "validate (ubuntu-latest, 3.12)",
+      "conclusion": "success",
+      "url": "https://github.com/ha5ha/research-harness/actions/runs/43202595729/job/131129562295"
+    },
+    {
+      "name": "validate (windows-latest, 3.12)",
+      "conclusion": "success",
+      "url": "https://github.com/ha5ha/research-harness/actions/runs/43202595729/job/131129562334"
+    }
+  ],
+  "relevant_log_lines": [
+    "validate (ubuntu-latest, 3.10)\tRun python -B -m unittest discover -s skills/research-harness/tests -v\t2026-11-12T10:41:46.3240252Z test_symlink_escape_is_rejected (test_rh.HarnessCLITests) ... ok",
+    "validate (ubuntu-latest, 3.10)\tRun python -B -m unittest discover -s skills/research-harness/tests -v\t2026-11-12T10:41:46.3923384Z Ran 31 tests in 2.575s",
+    "validate (ubuntu-latest, 3.10)\tRun python -B -m unittest discover -s tests -v\t2026-11-12T10:41:47.2720861Z Ran 6 tests in 0.572s",
+    "validate (windows-latest, 3.10)\tRun python -B -m unittest discover -s skills/research-harness/tests -v\t2026-11-12T10:42:38.2218360Z test_symlink_escape_is_rejected (test_rh.HarnessCLITests) ... ok",
+    "validate (windows-latest, 3.10)\tRun python -B -m unittest discover -s skills/research-harness/tests -v\t2026-11-12T10:42:38.3446161Z Ran 31 tests in 5.479s",
+    "validate (windows-latest, 3.10)\tRun python -B -m unittest discover -s tests -v\t2026-11-12T10:42:40.1823691Z Ran 6 tests in 1.313s",
+    "validate (ubuntu-latest, 3.12)\tRun python -B -m unittest discover -s skills/research-harness/tests -v\t2026-11-12T10:41:40.5919347Z test_symlink_escape_is_rejected (test_rh.HarnessCLITests.test_symlink_escape_is_rejected) ... ok",
+    "validate (ubuntu-latest, 3.12)\tRun python -B -m unittest discover -s skills/research-harness/tests -v\t2026-11-12T10:41:40.6275373Z Ran 31 tests in 2.433s",
+    "validate (ubuntu-latest, 3.12)\tRun python -B -m unittest discover -s tests -v\t2026-11-12T10:41:41.2777630Z Ran 6 tests in 0.539s",
+    "validate (windows-latest, 3.12)\tRun python -B -m unittest discover -s skills/research-harness/tests -v\t2026-11-12T10:41:53.9449179Z test_symlink_escape_is_rejected (test_rh.HarnessCLITests.test_symlink_escape_is_rejected) ... ok",
+    "validate (windows-latest, 3.12)\tRun python -B -m unittest discover -s skills/research-harness/tests -v\t2026-11-12T10:41:54.0748970Z Ran 31 tests in 5.114s",
+    "validate (windows-latest, 3.12)\tRun python -B -m unittest discover -s tests -v\t2026-11-12T10:41:55.9291951Z Ran 6 tests in 1.321s"
+  ],
+  "limits": "Software checks only; not long-term scientific efficacy"
+}
